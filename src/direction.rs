@@ -1,9 +1,5 @@
 use std::fmt::Display;
 
-pub enum DirectionError {
-    InvalidDirection(char),
-}
-
 #[derive(Debug, Clone)]
 pub enum Direction {
     Up,
@@ -13,13 +9,13 @@ pub enum Direction {
 }
 
 impl Direction {
-    pub fn from_char(value: char) -> Result<Direction, DirectionError> {
+    pub fn from_char(value: char) -> Result<Direction, char> {
         match value {
             'U' => Ok(Direction::Up),
             'L' => Ok(Direction::Left),
             'D' => Ok(Direction::Down),
             'R' => Ok(Direction::Right),
-            ch => Err(DirectionError::InvalidDirection(ch)),
+            ch => Err(ch),
         }
     }
 }

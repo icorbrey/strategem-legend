@@ -21,34 +21,32 @@ pub struct Strategem {
 
 impl Strategem {
     pub fn from_yaml(yaml: &Yaml) -> Result<Vec<Strategem>, StrategemError> {
-        let strategems = ((&yaml["strategems"]).as_vec())
-            .map(|strategems| {
-                (strategems.into_iter())
-                    .map(|s| {
-                        let name = ((&s["name"]).clone().into_string())
-                            .ok_or(StrategemError::MissingName)?;
+        let strategems = (&yaml["strategems"])
+            .as_vec()
+            .unwrap_or(&vec![])
+            .into_iter()
+            .map(|s| {
+                let name = ((&s["name"]).clone())
+                    .into_string()
+                    .ok_or(StrategemError::MissingName)?;
 
-                        let code = ((&s["code"]).clone().into_string())
-                            .ok_or(StrategemError::MissingCode)
-                            .and_then(|s| {
-                                Code::from_string(s).map_err(|e| StrategemError::InvalidCode(e))
-                            })?;
+                let code = ((&s["code"]).clone())
+                    .into_string()
+                    .ok_or(StrategemError::MissingCode)
+                    .and_then(|s| Ok(Code::from_string(s)?))?;
 
-                        Ok(Strategem { name, code })
-                    })
-                    .collect()
+                Ok(Strategem { name, code })
             })
-            .unwrap_or(vec![]);
+            .collect::<Vec<Result<Strategem, StrategemError>>>();
 
-        if let Some(e) = ((&strategems).into_iter())
+        match ((&strategems).into_iter())
             .cloned()
             .filter_map(|x| x.err())
             .collect::<Vec<StrategemError>>()
             .first()
         {
-            return Err(e.clone());
+            None => Ok(strategems.into_iter().filter_map(|x| x.ok()).collect()),
+            Some(e) => Err(e.clone()),
         }
-
-        Ok(strategems.into_iter().filter_map(|x| x.ok()).collect())
     }
 }

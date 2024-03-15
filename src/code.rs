@@ -1,6 +1,6 @@
 use std::fmt::Display;
 
-use crate::direction::{Direction, DirectionError};
+use crate::direction::Direction;
 use thiserror::Error;
 
 #[derive(Error, Debug, Clone)]
@@ -14,23 +14,20 @@ pub struct Code(pub Vec<Direction>);
 
 impl Code {
     pub fn from_string(code: String) -> Result<Self, CodeError> {
-        let directions: Vec<Result<Direction, DirectionError>> =
+        let directions: Vec<Result<Direction, char>> =
             code.chars().into_iter().map(Direction::from_char).collect();
 
-        if (&directions).into_iter().any(|d| d.is_err()) {
-            return Err(CodeError::InvalidDirections(
+        if !(&directions).into_iter().any(|d| d.is_err()) {
+            Ok(Code(
+                directions.into_iter().filter_map(|d| d.ok()).collect(),
+            ))
+        } else {
+            Err(CodeError::InvalidDirections(
                 (directions.iter())
                     .filter_map(|d| d.as_ref().err())
-                    .map(|e| match e {
-                        DirectionError::InvalidDirection(ch) => ch,
-                    })
                     .collect(),
-            ));
+            ))
         }
-
-        Ok(Code(
-            directions.into_iter().filter_map(|d| d.ok()).collect(),
-        ))
     }
 }
 
