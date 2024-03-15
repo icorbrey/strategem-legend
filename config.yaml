@@ -1,0 +1,169 @@
+strategems:
+
+  - name: LIST-850 Jump Pack
+    code: DUUDU
+
+  - name: B-1 Supply Pack
+    code: DLDUUD
+
+  - name: AX/LAS-5 "Guard Dog" Rover
+    code: DULURR
+
+  - name: SH-20 Ballistic Shield Backpack
+    code: DLDDUL
+
+  - name: SH-32 Shield Generator Pack
+    code: DULRLR
+
+  - name: AX/AR-23 "Guard Dog"
+    code: DULURD
+
+  - name: MG-43 Machine Gun
+    code: DLDUR
+
+  - name: APW-1 Anti-Materiel Rifle
+    code: DLRUD
+
+  - name: M-105 Stalwart
+    code: DLDUUL
+
+  - name: EAT-17 Expendable Anti-tank
+    code: DDLUR
+
+  - name: GR-8 Recoilless Rifle
+    code: DLRRL
+
+  - name: FLAM-40 Flamethrower
+    code: DLUDU
+
+  - name: AC-8 Autocannon
+    code: DLDUUR
+
+  - name: RS-422 Railgun
+    code: DRDULR
+
+  - name: FAF-14 SPEAR Launcher
+    code: DDUDD
+
+  - name: GL-21 Grenade Launcher
+    code: DLULD
+
+  - name: LAS-98 Laser Cannon
+    code: DLDUL
+
+  - name: ARC-3 Arc Thrower
+    code: DRDULL
+
+  - name: Reinforce
+    code: UDRLU
+
+  - name: SOS Beacon
+    code: UDRU
+
+  - name: Resupply
+    code: DDUR
+
+  - name: NUX-223 Hellbomb
+    code: DULDURDU
+
+  - name: SSSD Delivery
+    code: DDDUU
+
+  - name: Seismic Probe
+    code: UULRDD
+
+  - name: Upload Data
+    code: DDUUU
+
+  - name: Eagle Rearm
+    code: UULUR
+
+  - name: Illumination Flare
+    code: RRLL
+
+  - name: E/MG-101 HMG Emplacement
+    code: DULRRL
+
+  - name: FX-12 Shield Generator Relay
+    code: DDLRLR
+
+  - name: A/ARC-3 Tesla Rower
+    code: DURULR
+
+  - name: MD-6 Anti-Personnel Minefield
+    code: DLUR
+
+  - name: MD-14 Incendiary Mines
+    code: DLLD
+
+  - name: A/MG-43 Machine Gun Sentry
+    code: DURRU
+
+  - name: A/G-16 Gatling Sentry
+    code: DURL
+
+  - name: A/M-12 Mortar Sentry
+    code: DURRD
+
+  - name: A/AC-8 Autocannon Sentry
+    code: DURULU
+
+  - name: A/MLS-4X Rocket Sentry
+    code: DURRL
+
+  - name: A/M-23 EMS Mortar Sentry
+    code: DURDR
+
+  - name: Orbital Gatling Barrage
+    code: RDLUU
+
+  - name: Orbital Airburst Strike
+    code: RRR
+
+  - name: Orbital 120MM HE Barrage
+    code: RRDLRD
+
+  - name: Orbital 380MM HE Barrage
+    code: RDUULDD
+
+  - name: Orbital Walking Barrage
+    code: RDRDRD
+
+  - name: Orbital Laser
+    code: RDURD
+
+  - name: Orbital Railcannon Strike
+    code: RUDDR
+
+  - name: Orbital Precision Strike
+    code: RRU
+
+  - name: Orbital Gas Strike
+    code: RRDR
+
+  - name: Orbital EMS Strike
+    code: RRLD
+
+  - name: Orbital Smoke Strike
+    code: RRDU
+
+  - name: Eagle Strafing Run
+    code: URR
+
+  - name: Eagle Airstrike
+    code: URDR
+
+  - name: Eagle Cluster Bomb
+    code: URDDR
+
+  - name: Eagle Napalm Airstrike
+    code: URDU
+
+  - name: Eagle Smoke Strike
+    code: URUD
+
+  - name: Eagle 110MM Rocket Pods
+    code: URUL
+
+  - name: Eagle 500kg Bomb
+    code: URDDD
