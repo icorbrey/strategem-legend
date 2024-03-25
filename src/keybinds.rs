@@ -38,9 +38,9 @@ impl Keybinds {
                 confirm: Key::Enter,
             },
             KeybindPreset::Hjkl => Self {
-                up: Key::Char('h'),
-                left: Key::Char('j'),
-                down: Key::Char('k'),
+                up: Key::Char('k'),
+                left: Key::Char('h'),
+                down: Key::Char('j'),
                 right: Key::Char('l'),
                 cancel: Key::Escape,
                 confirm: Key::Enter,
@@ -50,7 +50,7 @@ impl Keybinds {
                 left: Key::Char('a'),
                 down: Key::Char('s'),
                 right: Key::Char('d'),
-                cancel: Key::Escape,
+                cancel: Key::Char('q'),
                 confirm: Key::Enter,
             },
         }

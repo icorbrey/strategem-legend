@@ -29,6 +29,10 @@ impl Code {
             ))
         }
     }
+
+    pub fn length(&self) -> usize {
+        self.0.len()
+    }
 }
 
 impl Display for Code {

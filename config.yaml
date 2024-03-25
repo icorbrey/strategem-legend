@@ -1,169 +1,240 @@
+keybinds:
+  preset: wasd
+
 strategems:
 
-  - name: LIST-850 Jump Pack
+  - name: Jump Pack
+    category: Backpacks
     code: DUUDU
 
-  - name: B-1 Supply Pack
+  - name: Supply Pack
+    category: Backpacks
     code: DLDUUD
 
-  - name: AX/LAS-5 "Guard Dog" Rover
+  - name: \"Guard Dog" Rover
+    category: Backpacks
     code: DULURR
 
-  - name: SH-20 Ballistic Shield Backpack
+  - name: Ballistic Shield Backpack
+    category: Backpacks
     code: DLDDUL
 
-  - name: SH-32 Shield Generator Pack
+  - name: Shield Generator Pack
+    category: Backpacks
     code: DULRLR
 
-  - name: AX/AR-23 "Guard Dog"
+  - name: \"Guard Dog"
+    category: Backpacks
     code: DULURD
 
-  - name: MG-43 Machine Gun
+  - name: Machine Gun
+    category: Support Weapons
     code: DLDUR
 
-  - name: APW-1 Anti-Materiel Rifle
+  - name: Anti-Materiel Rifle
+    category: Support Weapons
     code: DLRUD
 
-  - name: M-105 Stalwart
+  - name: Stalwart
+    category: Support Weapons
     code: DLDUUL
 
-  - name: EAT-17 Expendable Anti-tank
+  - name: Expendable Anti-tank
+    category: Support Weapons
     code: DDLUR
 
-  - name: GR-8 Recoilless Rifle
+  - name: Recoilless Rifle
+    category: Support Weapons
     code: DLRRL
 
-  - name: FLAM-40 Flamethrower
+  - name: Flamethrower
+    category: Support Weapons
     code: DLUDU
 
-  - name: AC-8 Autocannon
+  - name: Autocannon
+    category: Support Weapons
     code: DLDUUR
 
-  - name: RS-422 Railgun
+  - name: Railgun
+    category: Support Weapons
     code: DRDULR
 
-  - name: FAF-14 SPEAR Launcher
+  - name: SPEAR Launcher
+    category: Support Weapons
     code: DDUDD
 
-  - name: GL-21 Grenade Launcher
+  - name: Grenade Launcher
+    category: Support Weapons
     code: DLULD
 
-  - name: LAS-98 Laser Cannon
+  - name: Laser Cannon
+    category: Support Weapons
     code: DLDUL
 
-  - name: ARC-3 Arc Thrower
+  - name: Arc Thrower
+    category: Support Weapons
     code: DRDULL
 
   - name: Reinforce
+    category: Support Weapons
     code: UDRLU
 
   - name: SOS Beacon
+    category: Mission Strategems
     code: UDRU
 
   - name: Resupply
+    category: Mission Strategems
     code: DDUR
 
-  - name: NUX-223 Hellbomb
+  - name: Hellbomb
+    category: Mission Strategems
     code: DULDURDU
 
   - name: SSSD Delivery
+    category: Mission Strategems
     code: DDDUU
 
   - name: Seismic Probe
+    category: Mission Strategems
     code: UULRDD
 
   - name: Upload Data
+    category: Mission Strategems
     code: DDUUU
 
   - name: Eagle Rearm
+    category: Mission Strategems
     code: UULUR
 
   - name: Illumination Flare
+    category: Mission Strategems
     code: RRLL
 
-  - name: E/MG-101 HMG Emplacement
+  - name: SEAF Artillery
+    category: Mission Strategems
+    code: RUUD
+
+  - name: Super Earth Flag
+    category: Mission Strategems
+    code: DUDU
+
+  - name: HMG Emplacement
+    category: Defensive
     code: DULRRL
 
-  - name: FX-12 Shield Generator Relay
+  - name: Shield Generator Relay
+    category: Defensive
     code: DDLRLR
 
-  - name: A/ARC-3 Tesla Rower
+  - name: Tesla Tower
+    category: Defensive
     code: DURULR
 
-  - name: MD-6 Anti-Personnel Minefield
+  - name: Anti-Personnel Minefield
+    category: Defensive
     code: DLUR
 
-  - name: MD-14 Incendiary Mines
+  - name: Incendiary Mines
+    category: Defensive
     code: DLLD
 
-  - name: A/MG-43 Machine Gun Sentry
+  - name: Machine Gun Sentry
+    category: Defensive
     code: DURRU
 
-  - name: A/G-16 Gatling Sentry
+  - name: Gatling Sentry
+    category: Defensive
     code: DURL
 
-  - name: A/M-12 Mortar Sentry
+  - name: Mortar Sentry
+    category: Defensive
     code: DURRD
 
-  - name: A/AC-8 Autocannon Sentry
+  - name: Autocannon Sentry
+    category: Defensive
     code: DURULU
 
-  - name: A/MLS-4X Rocket Sentry
+  - name: Rocket Sentry
+    category: Defensive
     code: DURRL
 
-  - name: A/M-23 EMS Mortar Sentry
+  - name: EMS Mortar Sentry
+    category: Defensive
     code: DURDR
 
   - name: Orbital Gatling Barrage
+    category: Orbital
     code: RDLUU
 
   - name: Orbital Airburst Strike
+    category: Orbital
     code: RRR
 
   - name: Orbital 120MM HE Barrage
+    category: Orbital
     code: RRDLRD
 
   - name: Orbital 380MM HE Barrage
+    category: Orbital
     code: RDUULDD
 
   - name: Orbital Walking Barrage
+    category: Orbital
     code: RDRDRD
 
   - name: Orbital Laser
+    category: Orbital
     code: RDURD
 
   - name: Orbital Railcannon Strike
+    category: Orbital
     code: RUDDR
 
   - name: Orbital Precision Strike
+    category: Orbital
     code: RRU
 
   - name: Orbital Gas Strike
+    category: Orbital
     code: RRDR
 
   - name: Orbital EMS Strike
+    category: Orbital
     code: RRLD
 
   - name: Orbital Smoke Strike
+    category: Orbital
     code: RRDU
 
   - name: Eagle Strafing Run
+    category: Eagle
     code: URR
 
   - name: Eagle Airstrike
+    category: Eagle
     code: URDR
 
   - name: Eagle Cluster Bomb
+    category: Eagle
     code: URDDR
 
   - name: Eagle Napalm Airstrike
+    category: Eagle
     code: URDU
 
   - name: Eagle Smoke Strike
+    category: Eagle
     code: URUD
 
   - name: Eagle 110MM Rocket Pods
+    category: Eagle
     code: URUL
 
   - name: Eagle 500kg Bomb
+    category: Eagle
     code: URDDD
+
+  - name: Patriot Exosuit
+    category: Vehicles
+    code: LDRULDD
